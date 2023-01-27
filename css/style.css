@@ -1,20 +1,18 @@
-:root{
-  --first: #f3cba5; 
+:root {
+  --first: #f3cba5;
 
-    
   --second: #975a5e;
-  
+
   --third: #453953;
-  
+
   --fourth: #25161b;
 }
-
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
 }
 
 body {
@@ -27,31 +25,46 @@ body {
 }
 
 nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
   font-size: 1.7rem;
+  background-color: #96595d;
 }
 
 nav ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
+  height: 4rem;
 }
 
 /* DROPDOWN */
 
 .dropbtn {
   border: none;
+  width: 100%;
+  height: 100%;
+  font-size: 2rem;
+  background-color: #6e4144;
+  background-color: #96595d;
+  font-family: "Aboreto", cursive;
+  /* border: #6e4144 2px solid;
+  box-shadow: -14px 17px 33px -4px #6e4144; */
 }
 
 .dropdown {
   position: relative;
   display: inline-block;
+  width: auto;
+  height: 2.2rem;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -71,22 +84,29 @@ nav ul {
 }
 
 header {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+header#main {
+  height: 100vh;
   flex-direction: column;
   font-size: 3rem;
 }
 
-header h1 {
+header.songs {
+  margin: 3%;
+  font-size: 1.8rem;
+}
+
+header#main h1 {
   margin: 1rem;
 }
 
-header ul {
+header#main ul {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  
 }
