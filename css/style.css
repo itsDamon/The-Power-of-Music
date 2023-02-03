@@ -110,3 +110,53 @@ header#main ul {
   align-items: center;
   flex-direction: column;
 }
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.boxes {
+  border: 2px solid #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.content {
+  width: 70%;
+}
+
+.headers {
+  font-size: 2rem;
+  min-height: 30%;
+}
+
+.contents {
+  border: 1px solid blueviolet;
+  font-size: 2rem;
+  min-height: 50vh;
+  width: 70%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.description {
+  width: 30%;
+}
+
+.rimandoTematica {
+  font-size: 2.5rem;
+  width: 100%;
+  min-height: 20vh;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
