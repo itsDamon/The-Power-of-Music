@@ -106,6 +106,11 @@ header.songs {
   font-size: 1.8rem;
 }
 
+header.lista {
+  margin: 3%;
+  font-size: 1.8rem;
+}
+
 header#main h1 {
   margin: 1rem;
 }
@@ -125,8 +130,22 @@ main {
   justify-content: flex-start;
 }
 
+.mainLista {
+  margin-top: 8%;
+  font-size: 2rem;
+  list-style: none;
+  text-decoration: none;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.mainLista a {
+  margin: 2%;
+}
+
 .boxes {
-  border: 2px solid #000;
+  /* border: 2px solid #000; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -139,13 +158,13 @@ main {
 
 .headers {
   font-family: "Dancing Script", cursive;
-  font-size: 2.4rem;
+  font-size: 2.8rem;
   min-height: 30%;
   margin: 1.5rem;
 }
 
 .contents {
-  border: 1px solid blueviolet;
+  /* border: 1px solid blueviolet; */
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.6rem;
   min-height: 50vh;
