@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- style="overflow: hidden;" -->
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -15,6 +14,8 @@
       rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="icon" type="image/x-icon" href="/images/test3.png" />
+    <link rel="stylesheet" href="css/magicscroll.css" />
+    <script src="js/magicscroll.js"></script>
     <title>The power of music</title>
   </head>
   <body>
@@ -66,7 +67,9 @@
             <a href="pages/die.html">DIE</a>
             <a href="pages/FUKDaPolice.html">Fucd da Police</a>
             <a href="pages/imagine.html">Imagine</a>
-            <a href="pages/alcolnoneunproblema.html">L'Alcol non è un problema</a>
+            <a href="pages/alcolnoneunproblema.html"
+              >L'Alcol non è un problema</a
+            >
           </div>
         </div>
         <div class="dropdown">
@@ -104,8 +107,57 @@
     </ul> -->
     </header>
 
-    <div class="photos">
-      CIAO
+    <div class="photos">  
+      <div id="slider">
+        <div class="slides">
+          <img src="images/IMG_20230217_133033.jpg" width="100%" />
+        </div>
+
+        <div class="slides">
+          <img src="images/IMG_20230217_133218.jpg" width="100%" />
+        </div>
+
+        <div class="slides">
+          <img src="images/IMG_20230217_133250.jpg" width="100%" />
+        </div>
+
+        <div class="slides">
+          <img src="images/IMG_20230217_133257.jpg" width="100%" />
+        </div>
+
+        <div class="slides">
+          <img src="images/IMG_20230217_133339.jpg" width="100%" />
+        </div>
+
+        <div class="slides">
+          <img src="images/IMG_20230217_133342.jpg" width="100%" />
+        </div>
+      </div>
     </div>
   </body>
+  <script>
+    var index = 0;
+    var slides = document.querySelectorAll(".slides");
+
+    function changeSlide() {
+      if (index < 0) {
+        index = slides.length - 1;
+      }
+
+      if (index > slides.length - 1) {
+        index = 0;
+      }
+
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[index].style.display = "flex";
+
+      index++;
+
+      setTimeout(changeSlide, 2000);
+    }
+
+    changeSlide();
+  </script>
 </html>
