@@ -30,7 +30,7 @@ for file in glob.glob("./pages/*.html"):
         <div class="dropdown">
           <button class="dropbtn">History</button>
           <div class="dropdown-content">
-            <a href="centoPassi.html">Cento Passi</a>
+            <a href="centoPassi.html"></a>
             <a href="erika.html">Erika</a>
             <a href="IchBinSoldat.html"> Ich bin soldat </a>
             <a href="laGuerraDiPiero.html">La guerra di Piero</a>
@@ -181,7 +181,7 @@ for file in glob.glob("./pages/*.html"):
 
     updated_content = html_content.replace(old_code, new_code)
     with open(file, 'w') as f:
-        file.write(updated_content)
+        f.write(updated_content)
     print("Updated:", file)
     # with open(file, "")
     # line = file.
