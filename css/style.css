@@ -201,12 +201,17 @@ pre {
 
 .photos {
   padding: 3%;
+  padding-left: 15%;
   display: flex;
   width: 100%;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
+li{
+  list-style-type: none;
+  font-size: 1.3rem;
+}
 @keyframes fade {
   from {
     opacity: 0.4;
