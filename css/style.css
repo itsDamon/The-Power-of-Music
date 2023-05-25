@@ -12,6 +12,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 
 body {
@@ -208,7 +211,7 @@ pre {
   justify-content: space-evenly;
 }
 
-li{
+li {
   list-style-type: none;
   font-size: 1.3rem;
 }
